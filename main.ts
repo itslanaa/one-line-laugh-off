@@ -1,6 +1,8 @@
 // One-Line Laugh-Off: emit exactly one joke line as entry.txt.
 // The line is the whole entry. This program only checks it against
 // the 1-200 character gate and writes it out unchanged, byte for byte.
+// The judge reads only entry.txt, so this program adds no commentary of its own.
+// Keeping the output identical on every run matters more than cleverness here.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const joke =
